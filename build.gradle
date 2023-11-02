@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
+}
+
+ext {
+    group = 'chire.server.terminal'
+    version = '1.0.0'
+}
+
+sourceSets.main {
+    java.srcDirs = ["src/"]
+    resources.srcDirs = ["assets/"]
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+shadowJar{
+    manifest.attributes(
+            'Main-Class': 'server.terminal.ChireCore'
+    )
+}
+
+repositories {
+    mavenCentral()
+    maven{ url 'https://www.jitpack.io' }
+}
+
+dependencies {
+}
