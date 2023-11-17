@@ -1,5 +1,6 @@
 package server.terminal.mod;
 
+/**这是写模组用的*/
 public abstract class Mod {
 
     public void init(){
@@ -12,6 +13,6 @@ public abstract class Mod {
 
     /**测试用的*/
     public String modReturn(){
-        return "NO";
+        return null;
     }
 }
