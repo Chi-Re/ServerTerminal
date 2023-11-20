@@ -5,28 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7ff248-ac45-46e8-a088-fe09604ec059" name="变更" comment="chire">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/core/Setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/HttpApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/FileHtml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/FileMod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/FilePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/files/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/files/Reads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/files/Writes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/type/MapList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/type/ObjectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/util/exception/ModRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/util/exception/SeverRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/util/run/SeverRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/core/ContentLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/content/SeverWebs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/world/HtmlDesign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/world/SeverWebHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/JarIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/SaveIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/terminal/mod/ModCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/version.properties" beforeDir="false" afterPath="$PROJECT_DIR$/assets/version.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/terminal/ChireCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/ChireCore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/terminal/core/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/core/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/mod/Mod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/mod/Mod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/mod/Mods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/mod/Mods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/http/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/http/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/http/HttpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/http/HttpApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/io/FileHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/io/FileHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/io/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/io/FilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/type/MapList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/type/MapList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/terminal/util/run/SeverRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/util/run/SeverRunnable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +56,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ServerTerminal" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ServerTerminal" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -78,6 +68,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -97,18 +90,20 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/ServerTerminal/build/libs/mods&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/ServerTerminal/build/libs/crashes&quot;,
     &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ServerTerminal\build\libs\crashes" />
       <recent name="F:\ServerTerminal\build\libs\mods" />
       <recent name="F:\ServerTerminal\assets\templates" />
       <recent name="F:\ServerTerminal\assets" />
@@ -139,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerTerminal [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ServerTerminal [knows]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +145,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="knows" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,9 +184,9 @@
       <list>
         <item itemvalue="JAR 应用程序.ServerTerminal.jar" />
         <item itemvalue="Gradle.ServerTerminal [shadowJar]" />
+        <item itemvalue="Gradle.ServerTerminal [knows]" />
         <item itemvalue="应用程序.ChireCore" />
         <item itemvalue="应用程序.HomePageVisitor" />
-        <item itemvalue="Gradle.ServerTerminal [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698933710438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chire">
+      <created>1700195668500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700195668500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

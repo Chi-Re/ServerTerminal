@@ -1,15 +1,15 @@
 package server.terminal.type;
 
-import server.terminal.io.FileMod;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class MapList<T> {
-    public Map<String, T> list;
+    private Map<String, T> list;
+    private String listClass;
 
     public MapList(){
         this.list = new HashMap<>();
+        this.listClass = null;
     }
 
     /**TODO 有些不太稳定*/
@@ -19,11 +19,20 @@ public class MapList<T> {
         }
     }
 
-    public void put(String key, T value){
+    public void put(String key, T value, String listClass){
         this.list.put(key, value);
+        this.listClass = listClass;
+    }
+
+    public void put(String key, T value){
+        this.put(key, value, null);
     }
 
     public T get(String key){
         return this.list.get(key);
+    }
+
+    public Map<String, T> getList(){
+        return this.list;
     }
 }

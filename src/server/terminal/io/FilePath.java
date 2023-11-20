@@ -10,6 +10,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+import static server.terminal.ChireCore.log;
+
 public class FilePath {
     /**File文件变量*/
     public File file;
@@ -86,9 +88,8 @@ public class FilePath {
     /**创建文件夹*/
     public void mkdir(){
         if  (!file.exists() && file.isDirectory()) {
-            System.out.println(this.file + " 不存在，将要创建");
             if (file.mkdirs()){
-                System.out.println("文件创建成功");
+                log.info(this.file + " 文件创建");
             }
         }
     }

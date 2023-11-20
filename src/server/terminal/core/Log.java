@@ -82,8 +82,8 @@ public class Log {
     }
 
     public void warn(String text, Throwable t){
-        this.print(text);
         String time = setting.getTime();
+        this.print("[E] ["+time+"] "+text);
         this.log("[E] ["+time+"] "+text+" "+this.getError(t), false, true);
     }
 
@@ -93,8 +93,8 @@ public class Log {
 
     /**WWWW*/
     public void err(String text, Throwable t){
-        this.print(text);
         String time = setting.getTime();
+        this.print("[E] ["+time+"] "+text);
         this.log("[E] ["+time+"] "+text+" "+this.getError(t), false, true);
     }
 
