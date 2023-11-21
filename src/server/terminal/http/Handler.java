@@ -10,6 +10,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.Objects;
 
 import static server.terminal.ChireCore.log;
@@ -105,7 +106,6 @@ public class Handler extends Thread {
 //                    writer.write(len + "\r\n");//图片的内容
 //                }
                 //TODO 失败，我的http功底太差了，这个项目以后再说，我暂时在解决这个问题之前不会在这里下功夫了
-                System.out.println(imgtoio("F:\\ServerTerminal\\build\\libs\\crashes\\chire.png"));
                 //writer.write("x89PNG\r\n\\x1a\n"+imgtoio("F:\\ServerTerminal\\build\\libs\\crashes\\chire.png")+"\r\n");
                 writer.flush();
             } else {
@@ -114,25 +114,39 @@ public class Handler extends Thread {
         }
     }
 
-    public static String imgtoio(String imgaddress) {
-        //图片转化为二进制
-        byte[] imageBytes;
-        try (FileInputStream fileInputStream = new FileInputStream(imgaddress);) {
-            imageBytes = new byte[fileInputStream.available()];
-            fileInputStream.read(imageBytes);
-        } catch (IOException e) {
-            System.out.println(e);
-            return "null";
-        }
-        return UnicodeByteToStr(imageBytes);
-    }
+    public void getPNGByte(String path){
+        try {
+            // 创建一个 PNG 图片的 InputStream
+            InputStream inputStream = new FileInputStream("image.png");
 
-    public static String UnicodeByteToStr(byte[] b){
-        StringBuilder sb = new StringBuilder();
-        for (byte value : b) {
-            sb.append("\\x").append(String.format("%02x", value));
+            // 使用 InputStream 创建一个 BufferedInputStream
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
+
+            // 使用 BufferedInputStream 创建一个 DataInputStream
+            DataInputStream dataInputStream = new DataInputStream(bufferedInputStream);
+//git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+            // 使用 DataInputStream 读取 PNG 图片的头部信息
+            int width = dataInputStream.readInt();
+            int height = dataInputStream.readInt();
+            int bitDepth = dataInputStream.readInt();
+            int colorType = dataInputStream.readInt();
+
+            // 使用 DataInputStream 读取 PNG 图片的图像数据
+            byte[] imageData = new byte[width * height * (bitDepth / 8)];
+            dataInputStream.readFully(imageData);
+
+            // 使用 Base64 编码器将 PNG 图片的图像数据编码为 Base64 字符串
+            Base64.Encoder encoder = Base64.getEncoder();
+            String base64Image = encoder.encodeToString(imageData);
+
+            // 使用 String 的 getBytes() 方法将 Base64 字符串转换为二进制数据
+            byte[] binaryImage = base64Image.getBytes();
+
+            // 关闭 InputStream
+            inputStream.close();
+        } catch (IOException e){
+            
         }
-        return sb.toString();
     }
 }
 

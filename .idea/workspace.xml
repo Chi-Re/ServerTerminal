@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7ff248-ac45-46e8-a088-fe09604ec059" name="变更" comment="chire">
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/core/ContentLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/content/SeverWebs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/world/HtmlDesign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/http/website/world/SeverWebHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/JarIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/io/SaveIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/terminal/mod/ModCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/ChireCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/ChireCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/core/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/core/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/terminal/http/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/http/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/http/HttpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/http/HttpApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/io/FileHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/io/FileHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/io/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/io/FilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/type/MapList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/type/MapList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/terminal/util/run/SeverRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/terminal/util/run/SeverRunnable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +64,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="caedab96-09f2-4360-8e41-5d4021c88c56" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -88,21 +77,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/ServerTerminal/build/libs/crashes&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/ServerTerminal",
+    "project.structure.last.edited": "全局库",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ServerTerminal" />
       <recent name="F:\ServerTerminal\build\libs\crashes" />
       <recent name="F:\ServerTerminal\build\libs\mods" />
       <recent name="F:\ServerTerminal\assets\templates" />
@@ -220,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700195668500</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chire">
+      <created>1700495943524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700495943524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
